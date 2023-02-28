@@ -15,9 +15,9 @@ const App=()=> {
   const[correctAnswer,setCorrectAnswer]=useState(null)
   const[pickedAnswer,setPickedAnswer]=useState(null)
   const pickAnswer=(answer)=>{
+    setPickedAnswer(answer)
     if(answer===correctAnswer){
-      setPickedAnswer(answer)
-      setTotalScore(prevScore=>prevScore+1)
+      setTotalScore((prevScore)=>prevScore+1)
     }
 console.log(answer)
   }
