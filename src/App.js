@@ -45,7 +45,7 @@ console.log(answer)
     setCurrentQuestionIndex(0)
   }
   const fetchQuiz=async()=>{
-    const res=await fetch('https://opentdb.com/api.php?amount=10&type=multiple&encode=url3986')//fetch questions and answers from third party api ,and response is stored in results
+    const res=await fetch('https://opentdb.com/api.php?amount=10')//fetch questions and answers from third party api ,and response is stored in results
     const {results}=await res.json()
     setQuizzes(results)
     //getting all answers
